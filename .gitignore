@@ -1,0 +1,9 @@
+*.pdf
+*.txt
+*.bin
+*.tar
+*.pkl
+*.p
+*.pt
+/__pycache__
+/nanoGPT
