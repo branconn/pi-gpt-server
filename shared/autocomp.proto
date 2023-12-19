@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package autocomplete;
+
+// The request message containing the user input.
+message InferenceRequest {
+  string input = 1;
+}
+
+// The response message containing the server's response.
+message InferenceResponse {
+  string output = 1;
+}
+
+// The service definition.
+service AutoComplete {
+  // Sends a request and gets a response from the server.
+  rpc FetchNext(InferenceRequest) returns (InferenceResponse);
+}
